@@ -1,5 +1,5 @@
 body
-  font-family: sans-serif
+  font-family: helvetica, sans-serif
   background-color: #000000
   color: #CCCCBB
   line-height: 1.5em
@@ -7,15 +7,49 @@ body
 a
   text-decoration: none
   color: #0099cc
-  font-weight: bold
 
 p
-  padding: 1.0em
+  padding: 0.75em
+
+pre
+  font-family: monospace
 
 #page
   margin: auto
-  width: 600px
-  background-color: #111111
+  margin-top: 1.0em
+  margin-bottom: 1.0em
+  width: 700px
+  padding: 1.0em
+  border-left: 1px solid #330000
+  border-right: 1px solid #330000
 
 #article
   text-align: justify
+  .title
+    padding: 0.5em
+    font-size: 1.25em
+    text-align: center
+
+#header
+  .title
+    float: left
+    font-size: 1.2em
+    font-weight: bold
+  .about
+    float: right
+    font-style: italic
+  padding-bottom: 2.0em
+
+#footer
+  padding-top: 2.0em
+  font-size: 0.8em
+  text-align: center
+
+.article_index
+  margin: auto
+  padding: 1.0em
+  .title
+    float: right
+  .created_at
+    font-style: italic
+    float: left

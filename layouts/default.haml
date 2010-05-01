@@ -12,12 +12,21 @@
 
     #page
 
-      = link_to "Small Steps, Big Steps", "/"
+      #header
+        .title
+          = link_to "Small Steps, Big Steps", "/"
+        .about
+          = link_to "About Me, Alex McHale", "/about/index.html"
 
       #main= yield
 
       #footer
-        follow me on twitter
-        = link_to "@alexmchale", "http://twitter.com/alexmchale"
-        or email me at
-        = link_to "alexmchale@gmail.com", "mailto:alexmchale@gmail.com"
+        %p
+          twitter /
+          = link_to "@alexmchale", "http://twitter.com/alexmchale"
+          &bull;
+          email /
+          = link_to "alexmchale@gmail.com", "mailto:alexmchale@gmail.com"
+          &bull;
+          github /
+          = link_to "alexmchale", "http://github.com/alexmchale"
