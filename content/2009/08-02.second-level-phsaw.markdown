@@ -1,0 +1,87 @@
+---
+title: "Second Level? phsaw"
+kind: article
+created_at: "2009-08-02 02:00:00 +0000"
+---
+
+So the first thing I noticed upon connecting to my copy of Merc was that you
+couldn't save if you were level.  It makes sense in a real MUD. You don't want
+every ninny who connects for 20 seconds to fill a pfile. Make them play a
+little til they can take up space. That's not what I'm doing, though, so I want
+to be able to save at level 1.
+
+Let's take that requirement out. Start by finding where the message is
+generated. If we're lucky, that's where saving is done too.
+
+    [alexmchale@bullfrog ~/src/Merc21/src]$ grep "second level" *.c
+    act_comm.c:     send_to_char( "You must be at least second level to save.\n\r", ch );
+
+Excellent, only one spot. Open up your friendly neighborhood editor for act_comm.c and find that line.
+
+    void do_save( CHAR_DATA *ch, char *argument )
+    {
+        if ( IS_NPC(ch) )
+            return;
+
+        if ( ch->level < 2 )
+        {
+            send_to_char( "You must be at least second level to save.\n\r", ch );
+            return;
+        }
+
+        save_char_obj( ch );
+        send_to_char( "Ok.\n\r", ch );
+        return;
+    }
+
+I love this code base. It's just so darn easy to understand. This is the
+command "save" that saves your character, it's the standard format for all
+player commands. It takes the character calling the command as the first
+parameter and all passed arguments to the command as the second. Now let's get
+rid of that level check so that anyone can save! Now we have:
+
+    void do_save( CHAR_DATA *ch, char *argument )
+    {
+        if ( IS_NPC(ch) )
+            return;
+
+        save_char_obj( ch );
+        send_to_char( "Ok.\n\r", ch );
+        return;
+    }
+
+Yay! Save, quit, and recompile.
+
+    [alexmchale@bullfrog ~/src/Merc21/src]$ make
+    gcc -c -O -Wall   act_comm.c
+    rm -f merc
+    gcc -O -lcrypt  -o merc act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o db.o fight.o handler.o interp.o magic.o save.o special.o update.o
+    [alexmchale@bullfrog ~/src/Merc21/src]$
+
+Grins all around. Time to test it out!
+
+    [alexmchale@bullfrog ~/src/Merc21/area]$ ../src/merc 9001
+    Wed Jul 22 19:26:36 2009 :: Merc is ready to rock on port 9001.
+
+Hey, we didn't segfault immediately.  That's a good first step!
+
+    <20hp 100m 100mv> score
+    You are Daimun the Pilferer, level 1, 17 years old (0 hours).
+    You have 20/20 hit, 100/100 mana, 100/100 movement, 21 practices.
+    You are carrying 4/28 items with weight 16/140 kg.
+    Str: 13  Int: 13  Wis: 13  Dex: 16  Con: 13.
+    You have scored 1000 exp, and have 0 gold coins.
+    Autoexit: no.  Autoloot: no.  Autosac: no.
+    Wimpy set to 0 hit points.
+    You are standing.
+    You are wearing clothes.
+    You are neutral.
+
+    <20hp 100m 100mv> save
+    Ok.
+
+    <20hp 100m 100mv>
+
+Woot!  We successfully made and tested our first change.  Take 5.  See you next time.
+
+P.S. I have posted the code so far on my github as merc-mud.
