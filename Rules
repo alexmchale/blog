@@ -23,7 +23,7 @@ compile '*' do
 
   case item[:extension]
     when /markdown|md/ then filter :kramdown
-    when /haml/        then filter :haml
+    when /haml/        then filter :haml, :ugly => true
   end
 
   layout 'article' if item.path =~ /\/\d\d\d\d\/\d\d-\d\d\//
@@ -35,4 +35,4 @@ route '*' do
   item.identifier + 'index.html'
 end
 
-layout '*', :haml
+layout '*', :haml, :ugly => true
