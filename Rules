@@ -10,22 +10,25 @@
 #   item, use the pattern "/about/*/"; "/about/*" will also select the parent,
 #   because "*" matches zero or more characters.
 
-compile '/' do
-  filter :kramdown
-  layout 'default'
+compile '/assets/style/*/' do
+  filter :sass
 end
 
-compile '/stylesheet/' do
-  # don't filter or layout
+route '/assets/style/*/' do
+  item.identifier.chop + '.css' # so that the /assets/style/screen/ item is compiled to /assets/style/screen.css
 end
 
 compile '*' do
-  filter :haml
-  layout 'default'
-end
+  filter :erb
 
-route '/stylesheet/' do
-  '/style.css'
+  case item[:extension]
+    when /markdown|md/ then filter :kramdown
+    when /haml/        then filter :haml
+  end
+
+  layout 'article' if item.path =~ /\/\d\d\d\d\/\d\d-\d\d\//
+
+  layout 'default'
 end
 
 route '*' do

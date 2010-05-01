@@ -1,0 +1,12 @@
+---
+title: "The DB gets Swankier with SSL Encryption"
+kind: article
+created_at: "2009-10-02 01:58:07 +0000"
+---
+
+Today, I installed an SSL certificate onto SwankDB.  The web server is now
+configured to redirect all unencrypted traffic through the encrypted channel.
+This means that no matter how hard you try, it's virtually impossible to use
+SwankDB and not have your data secure as it travels across the internet.
+
+Doesn't that just give you the warm and fuzzies?  :-)

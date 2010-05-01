@@ -4,15 +4,20 @@
 
     %meta{charset: "utf-8"}
     %title= @item[:title]
-    %link{rel: "stylesheet", type: "text/css", href: "/style.css", media: "screen"}
+    %link{rel: "stylesheet", type: "text/css", href: "/assets/style/reset.css", media: "screen"}
+    %link{rel: "stylesheet", type: "text/css", href: "/assets/style/main.css", media: "screen"}
     %meta{name: "generator", content: "nanoc 3.1.3"}
 
   %body
 
-    #main= yield
+    #page
 
-    #sidebar
-      %h2 Documentation
-      %ul
-        %li= link_to "Documentation", "http://google.com"
-        %li= link_to "Asdf", "http://zxcv.com"
+      = link_to "Small Steps, Big Steps", "/"
+
+      #main= yield
+
+      #footer
+        follow me on twitter
+        = link_to "@alexmchale", "http://twitter.com/alexmchale"
+        or email me at
+        = link_to "alexmchale@gmail.com", "mailto:alexmchale@gmail.com"

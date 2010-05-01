@@ -1,0 +1,5 @@
+- sorted_articles.each do |article|
+
+  %p
+    %h2= link_to article[:title], url_for(article)
+    = article[:created_at]
