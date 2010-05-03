@@ -25,9 +25,7 @@ Active Projects
 Employment
 ----------
 
-**DIGITAL MONITORING PRODUCTS, INC**
--- Software Engineer --
-2007 to Present
+**DIGITAL MONITORING PRODUCTS, INC** -- Software Engineer -- 2007 to Present
 
 At DMP I was responsible for the development and code quality assurance of
 software in fire and burglary security systems that protect property and save
@@ -43,9 +41,7 @@ lives.
 
 ---
 
-**VISIONTECH**
--- Senior Software Engineer --
-2003 to 2007
+**VISIONTECH** -- Senior Software Engineer -- 2003 to 2007
 
 As VISIONTECH's sole software engineer, I was responsible for every piece of
 new software shipped during my tenure.
@@ -64,9 +60,7 @@ new software shipped during my tenure.
 
 ---
 
-**KUNG FU DESIGN, LLC**
--- Contracted Web Developer --
-2000 and 2001
+**KUNG FU DESIGN, LLC** -- Contracted Web Developer -- 2000 and 2001
 
 Collaborated as part of a dedicated team to develop Comedy Central’s South Park
 web site at southparkstudios.com. (PHP & Oracle)
