@@ -8,10 +8,21 @@ I am an experienced software engineer with the enthusiasm to develop great
 software and the knowledge to get the job done. I am excited about my field and
 about building systems that work for real people.
 
+Projects
+--------
+
+* Author of [SwankDB](https://swankdb.com), a web-based personal database.
+* Contributor to [Redis](http://code.google.com/p/redis/) and author of
+  [Try Redis](http://try.redis-db.com).
+
 Employment
 ----------
 
-**DIGITAL MONITORING PRODUCTS, INC** &bull; Software Engineer &bull; 2007 - Present
+**DIGITAL MONITORING PRODUCTS, INC**
+&bull;
+Software Engineer
+&bull;
+2007 - Present
 
 At DMP I was responsible for the development and code quality assurance of
 software in fre and burglary security systems that protect property and save
@@ -27,7 +38,11 @@ lives.
 
 ---
 
-**VISIONTECH** &bull; Senior Software Engineer &bull; 2003 – 2007
+**VISIONTECH**
+&bull;
+Senior Software Engineer
+&bull;
+2003 – 2007
 
 As VISIONTECH's sole software engineer, I was responsible for every piece of
 new software shipped during my tenure.
@@ -46,7 +61,11 @@ new software shipped during my tenure.
 
 ---
 
-**KUNG FU DESIGN, LLC** &bull; Contracted Web Developer &bull; November 2000 – March 2001
+**KUNG FU DESIGN, LLC**
+&bull;
+Contracted Web Developer
+&bull;
+November 2000 – March 2001
 
 Collaborated as part of a dedicated team to develop Comedy Central’s South Park
 web site at southparkstudios.com. (PHP & Oracle)
