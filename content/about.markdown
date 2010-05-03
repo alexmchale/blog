@@ -4,9 +4,22 @@ Alex McHale
 Overview
 --------
 
-I am an experienced software engineer with the enthusiasm to develop great
-software and the knowledge to get the job done. I am excited about my field and
-about building systems that work for real people.
+I'm a computer programmer with a passion for design and development. I enjoy
+starting on a project from the bottom and driving it to completion.
+
+I got my start writing software by programming for MUDs over telnet. I was
+comfortable with UNIX before I ever used a Windows computer. In '96 or '97 I
+discovered Linux and was thrilled with the chance to run something UNIX-like at
+home.
+
+Today, I love writing Ruby on OSX, both on Rails and off. I enjoy experimenting
+with other languages. I have deployed several large projects in C and Java. I'm
+trying to find the time to really figure out Erlang! I have been having fun
+lately playing with node-js.
+
+I have the enthusiasm to develop great software and the knowledge to get the
+job done. I am excited about my field and about building systems that work for
+real people.
 
 Contact Info
 ------------
