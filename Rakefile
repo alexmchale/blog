@@ -27,3 +27,11 @@ task :write do
     exec "#{EDITOR} #{path}"
   end
 end
+
+desc "Build the blog"
+task :compile do
+  system("nanoc3 compile")
+end
+
+desc "Compile and deploy"
+task :publish => [ "compile", "deploy:rsync" ]
