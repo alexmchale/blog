@@ -1,0 +1,61 @@
+---
+title: "I Learned to Program in MUD"
+kind: article
+created_at: "2009-07-22 02:00:00 +0000"
+---
+
+If you have never played a MUD before, here's a screenshot:
+
+    <20hp 100m 62mv> recall
+    The Temple Of Midgaard
+    You are in the southern end of the temple hall in the Temple of Midgaard.
+    The temple has been constructed from giant marble blocks, eternal in
+    appearance, and most of the walls are covered by ancient wall paintings
+    picturing Gods, Giants and peasants.
+       Large steps lead down through the grand temple gate, descending the huge
+    mound upon which the temple is built and ends on the temple square below.
+       Equally large steps lead UP through a small door into the ENTRANCE to MUD
+    SCHOOL.  (type 'up' to go to MUD SCHOOL.)  A small plaque is on this wall.
+    (White Aura) The executioner is here polishing his blade.
+
+    <20hp 100m 31mv>
+
+MUDs were what we were addicted to before World of Warcraft.  They were
+text-based role-playing-games. TBRPGs? MUDs were the alpha and the omega, and
+they consumed your life.  They had one goal - to level up and get better gear.
+Why?  To be the biggest, baddest dude in your particular MUD. Oh, and to slay
+dragons.
+
+There wasn't just one MUD.  The versions that I played, based on the Diku/Merc
+games, were open-source.  Anyone in the world could download it and start their
+own.  What made each one individual and special was the effort that the
+programmer, usually called the imp (short for implementor), put into the game.
+The imp would then find some creative people to design areas to expand the game
+world.  In the early days of the mid-90s, a bit of work and a bit of creativity
+could garner you a small playerbase to call your own.
+
+The MUD that I played religiously was MeatMUD. It was the first one I played,
+and the only MUD I ever truly loved. After playing for a year or so, a friend
+on the game indicated that it was possible to start your own. I was seriously
+taken aback by this thought. I could be the imp?! Wow! He set me up an account
+on his SunOS server and showed me how to download and compile a version of
+Merc.
+
+I was the boss of the game! I could be PAST MAX LEVEL! I was IMMORTAL! This was
+AMAZING!
+
+Ok, so just having unlimited power got boring quickly.  I wanted to modify this
+game, and make it my own.  I started to learn C, the lingua franca of
+programming languages. My life would never be the same.
+
+I really can't recall how long it was between my early tinkerings on that SunOS
+server and having a successful playerbase. In my head it seems overnight, but I
+know that was not the case in reality. My MUD, Hall of the Damned, at its
+height had 10-20 players connected on average. That was pretty darn successful
+for a scrub teenager who barely knew how to program!
+
+I kept that game running for a couple of years before moving on. It was a
+fantastic experience that has given me the life I have today. I hear rumor that
+there's still a few MUDs out there today. If you're ever curious to see what
+online gaming looked like in the early days of the internet, you might check
+one out.

@@ -1,0 +1,105 @@
+---
+title: "Running MercMUD 2.1 in 2009"
+kind: article
+created_at: "2009-07-24 02:00:00 +0000"
+---
+
+I've been getting nostalgic for my days as a MUD implementor. I decided to grab
+a copy of one of the old codebases I favored and see about running it on my
+server. I settled on Merc 2.1, always one of my favorite starting blocks. It
+had decent code, for the time, and it's not packed with features. In this case,
+I consider small and easy to understand a considerable advatange.
+
+Start by unpacking the tarball.  I found a download for it at MudBytes, a
+website that made me giddy when I found it.
+
+    [alexmchale@bullfrog ~/src]$ tar xzvf merc2-1.tar.gz
+    Merc21/
+    Merc21/README
+    Merc21/area/
+    Merc21/area/area.lst
+    ...
+    Merc21/src/save.c
+    Merc21/src/special.c
+    Merc21/src/update.c
+    ftp_game.org
+    [alexmchale@bullfrog ~/src]$
+
+Next, try to make it!
+
+    [alexmchale@bullfrog ~/src/Merc21/src]$ make
+    gcc -c -O -Wall   act_comm.c
+    gcc -c -O -Wall   act_info.c
+    gcc -c -O -Wall   act_move.c
+    gcc -c -O -Wall   act_obj.c
+    gcc -c -O -Wall   act_wiz.c
+    gcc -c -O -Wall   comm.c
+    comm.c:151: error: conflicting types for 'accept'
+    /usr/include/sys/socket.h:214: note: previous declaration of 'accept' was here
+    comm.c:152: error: conflicting types for 'bind'
+    /usr/include/sys/socket.h:115: note: previous declaration of 'bind' was here
+    comm.c:154: error: conflicting types for 'getpeername'
+    /usr/include/sys/socket.h:133: note: previous declaration of 'getpeername' was here
+    comm.c:155: error: conflicting types for 'getsockname'
+    /usr/include/sys/socket.h:119: note: previous declaration of 'getsockname' was here
+    make: *** [comm.o] Error 1
+    [alexmchale@bullfrog ~/src/Merc21/src]$
+
+Err, ok.  So that didn't go quite as planned.  Digging deeper, it turns out I
+need to remove most of the prototypes in comm.c that were from another age.  I
+also have to add an -lcrypt flag to the Makefile, add unistd.h as an include in
+comm.c and changed a variable from int to socklen_t.  No big deal.
+
+    [alexmchale@bullfrog ~/src/Merc21/src]$ rm *.o
+    [alexmchale@bullfrog ~/src/Merc21/src]$ make
+    gcc -c -O -Wall   act_comm.c
+    gcc -c -O -Wall   act_info.c
+    gcc -c -O -Wall   act_move.c
+    gcc -c -O -Wall   act_obj.c
+    gcc -c -O -Wall   act_wiz.c
+    gcc -c -O -Wall   comm.c
+    gcc -c -O -Wall   const.c
+    gcc -c -O -Wall   db.c
+    gcc -c -O -Wall   fight.c
+    gcc -c -O -Wall   handler.c
+    gcc -c -O -Wall   interp.c
+    gcc -c -O -Wall   magic.c
+    gcc -c -O -Wall   save.c
+    gcc -c -O -Wall   special.c
+    gcc -c -O -Wall   update.c
+    rm -f merc
+    gcc -O -lcrypt  -o merc act_comm.o act_info.o act_move.o act_obj.o act_wiz.o comm.o const.o db.o fight.o handler.o interp.o magic.o save.o special.o update.o
+    [alexmchale@bullfrog ~/src/Merc21/src]$
+
+There we go!  Now let's fire her up.
+
+    [alexmchale@bullfrog ~/src/Merc21/area]$ ../src/merc 9001
+    Wed Jul 22 18:49:24 2009 :: Merc is ready to rock on port 9001.
+
+AWESOME! ... but can we connect?
+
+    [alexmchale@bullfrog ~]$ telnet localhost 9001
+    Trying 127.0.0.1...
+    Connected to localhost.
+    Escape character is '^]'.
+
+                        M          E          R          C
+
+        Diku Mud was created by Hans Henrik St{rfeldt, Katja Nyboe,
+          Tom Madsen, Michael Seifert, and Sebastian Hammer.
+
+                        D          I          K          U
+
+        Thanks to all the people who have released their Mud code, worlds,
+          ideas, and bug fixes.  'If I have seen far it is because I have
+          stood on the shoulders of giants.'  -- Isaac Newton
+
+                                   M          U          D
+
+        01 Aug 1993    Merc 2.1    Furey, Hatchet, Kahn
+
+    By what name do you wish to be known?
+
+It's at this point I'm nearly giggling like a little kid.
+
+That wasn't so hard! Next time, we'll do some implementin'!
