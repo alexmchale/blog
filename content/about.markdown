@@ -8,6 +8,13 @@ I am an experienced software engineer with the enthusiasm to develop great
 software and the knowledge to get the job done. I am excited about my field and
 about building systems that work for real people.
 
+Contact Info
+------------
+
+* By email at [alexmchale@gmail.com](mailto:alexmchale@gmail.com)
+* On GitHub as [alexmchale](http://github.com/alexmchale)
+* On Twitter as [@alexmchale](http://twitter.com/alexmchale)
+
 Active Projects
 ---------------
 
