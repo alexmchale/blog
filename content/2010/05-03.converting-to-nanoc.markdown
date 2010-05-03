@@ -1,0 +1,20 @@
+---
+title: "Converting to Nanoc"
+kind: article
+created_at: "2010-05-03 19:37:19 +0000"
+---
+
+Over the last few days I have migrated this blog from
+[Wordpress](http://alexmchale.wordpress.com) to
+[nanoc](http://nanoc.stoneship.org/).  Nanoc is an awesome static site
+generator. I've been having a lot of fun tuning it for my needs.
+
+This site is now writting in HAML, SASS and Markdown. At the same time, I
+converted my résumé to Markdown. I know the double é in résumé looks
+pretentious, but I really just wanted an excuse to use the easy-to-type accents
+in OSX.
+
+I am keeping the source to this site posted on my GitHub at
+[alexmchale/blog](http://github.com/alexmchale/blog). I don't know that it'll
+be useful for anyone. Thanks to GitHub, it's strangely easier to open source
+stuff than it is to keep it closed. I love those guys!
