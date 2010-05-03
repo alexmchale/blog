@@ -7,7 +7,7 @@ Overview
 I'm a computer programmer with a passion for design and development. I enjoy
 starting on a project from the bottom and driving it to completion.
 
-I got my start writing software by programming for MUDs over telnet. I was
+I got my start writing software by programming on MUDs over telnet. I was
 comfortable with UNIX before I ever used a Windows computer. In '96 or '97 I
 discovered Linux and was thrilled with the chance to run something UNIX-like at
 home.
