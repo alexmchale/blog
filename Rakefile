@@ -18,7 +18,7 @@ task :write do
     File.open(path, "w") do |f|
       f.puts %[---]
       f.puts %[title: "#{full_title}"]
-      f.puts %[kind: article]
+      f.puts %[kind: article-draft]
       f.puts %[created_at: "#{Time.now.to_s}"]
       f.puts %[---]
       f.puts
