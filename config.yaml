@@ -19,7 +19,10 @@ index_filenames: [ 'index.html' ]
 # before and after the last site compilation.
 enable_output_diff: false
 
-base_url: ""
+base_url: "http://blog.swankdb.com"
+title: "Small Steps, Big Steps"
+author_name: "Alex McHale"
+author_uri: "http://blog.swankdb.com"
 
 # The data sources where nanoc loads its data from. This is an array of
 # hashes; each array element represents a single data source. By default,

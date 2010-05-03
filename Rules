@@ -10,6 +10,14 @@
 #   item, use the pattern "/about/*/"; "/about/*" will also select the parent,
 #   because "*" matches zero or more characters.
 
+compile '/feed/' do
+  filter :haml
+end
+
+route '/feed/' do
+  '/index.atom'
+end
+
 compile '/assets/style/*/' do
   filter :sass
 end
