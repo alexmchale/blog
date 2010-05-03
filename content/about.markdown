@@ -25,10 +25,10 @@ Software Engineer
 2007 - Present
 
 At DMP I was responsible for the development and code quality assurance of
-software in fre and burglary security systems that protect property and save
+software in fire and burglary security systems that protect property and save
 lives.
 
-* Improved DMP's fagship commercial security control panel. (C)
+* Improved DMP's flagship commercial security control panel. (C)
 * Collaborated to develop a new residential security control panel. (C)
 * Independently developed a network alarm receiver for installations in
   central stations such as ADT. (Java & SQL)
