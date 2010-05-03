@@ -8,8 +8,8 @@ I am an experienced software engineer with the enthusiasm to develop great
 software and the knowledge to get the job done. I am excited about my field and
 about building systems that work for real people.
 
-Projects
---------
+Active Projects
+---------------
 
 * Author of [SwankDB](https://swankdb.com), a web-based personal database.
 * Contributor to [Redis](http://code.google.com/p/redis/) and author of
