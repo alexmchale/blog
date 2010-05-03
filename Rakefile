@@ -3,6 +3,7 @@ require 'fileutils'
 
 EDITOR = ENV["EDITOR"] || "vi"
 
+desc "Create a new blog entry"
 task :write do
   full_title = ENV["title"]
   clean_title = full_title.downcase.gsub(/[\s_]+/, '-').gsub(/[^a-z0-9\-]/, '') if full_title
