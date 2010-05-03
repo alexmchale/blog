@@ -7,13 +7,13 @@ Overview
 I'm a computer programmer with a passion for design and development. I enjoy
 starting on a project from the bottom and driving it to completion.
 
-I got my start writing software by programming on MUDs over telnet. I was
-comfortable with UNIX before I ever used a Windows computer. In '96 or '97 I
-discovered Linux and was thrilled with the chance to run something UNIX-like at
-home.
+I got my start writing software by programming on MUDs (text-based, online
+games) over telnet. I was comfortable with UNIX before I ever used a
+Windows computer. In '96 or '97 I discovered Linux and was thrilled with the
+chance to run something UNIX-like at home.
 
 Today, I love writing Ruby on OSX, both on Rails and off. I enjoy experimenting
-with other languages. I have deployed several large projects in C and Java. I'm
+with other languages. I have deployed several large products in C and Java. I'm
 trying to find the time to really figure out Erlang! I have been having fun
 lately playing with node-js.
 
@@ -28,6 +28,14 @@ Contact Info
 * On GitHub as [alexmchale](http://github.com/alexmchale)
 * On Twitter as [@alexmchale](http://twitter.com/alexmchale)
 
+Objective
+---------
+
+My goal is to work for a delightful company whose product is the software. I
+want to write programs that make someone's life better. So much software out
+there makes people frustrated and unhappy. I intend to work on the diamond in
+the rough.
+
 Active Projects
 ---------------
 
@@ -40,14 +48,14 @@ Employment
 
 **DIGITAL MONITORING PRODUCTS, INC** -- Software Engineer -- 2007 to Present
 
-At DMP I was responsible for the development and code quality assurance of
+At DMP I am responsible for the development and code quality assurance of
 software in fire and burglary security systems that protect property and save
 lives.
 
 * Improved DMP's flagship commercial security control panel. (C)
 * Collaborated to develop a new residential security control panel. (C)
 * Independently developed a network alarm receiver for installations in
-  central stations such as ADT. (Java & SQL)
+  central security stations. (Java & SQL)
 * Developed the new DMP Web Services server for cellular communication
   with control panels and billing. (Ruby on Rails & AJAX)
 * Led code reviews as part of the quality control process.
@@ -76,4 +84,6 @@ new software shipped during my tenure.
 **KUNG FU DESIGN, LLC** -- Contracted Web Developer -- 2000 and 2001
 
 Collaborated as part of a dedicated team to develop Comedy Central’s South Park
-web site at southparkstudios.com. (PHP & Oracle)
+web site at [southparkstudios.com](http://southparkstudios.com). The site we
+designed in 2000 has since been replaced by something newer and better. (PHP &
+Oracle)
