@@ -40,6 +40,9 @@ Active Projects
 ---------------
 
 * Author of [SwankDB](https://swankdb.com), a web-based personal database.
+* Author of
+  [SwankNote](http://itunes.apple.com/us/app/swank-note/id335157340?mt=8),
+  an iPhone interface to SwankDB.
 * Contributor to [Redis](http://code.google.com/p/redis/) and author of
   [Try Redis](http://try.redis-db.com).
 
