@@ -4,8 +4,8 @@ Alex McHale
 Overview
 --------
 
-I'm a computer programmer with a passion for design and development. I enjoy
-starting on a project from the bottom and driving it to completion.
+I'm a computer programmer with a passion for software design and development. I
+enjoy starting on a project from the bottom and driving it to completion.
 
 I got my start writing software by programming on MUDs (text-based, online
 games) over telnet. I was comfortable with UNIX before I ever used a
