@@ -1,0 +1,48 @@
+=clearfix
+  *display:                 inline-block
+  &:after
+    content:                " "
+    display:                block
+    height:                 0
+    clear:                  both
+    visibility:             hidden
+
+body
+
+#page
+  background-color: transparent
+  border: 0px
+
+#feature_viewer
+  color: black
+  font-size: 1.1em
+  line-height: 1.25em
+  font-family: Menlo, monospace
+  clear: both
+
+div.feature
+  display: none
+  background-color: #ccc
+  padding: 1.5em
+  +clearfix
+
+div.hidden
+  display: none
+
+div.shown
+  display: block
+
+.previous_link
+  float: left
+
+.next_link
+  float: right
+
+.center
+  text-align: center
+
+.left
+  float: left
+
+.right
+  float: right

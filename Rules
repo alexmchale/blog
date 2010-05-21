@@ -18,6 +18,20 @@ route '/feed/' do
   '/index.atom'
 end
 
+compile '/assets/javascript/*/' do
+end
+
+route '/assets/javascript/*/' do
+  item.identifier.chop + '.js'
+end
+
+compile '/assets/images/*/' do
+end
+
+route '/assets/images/*/' do
+  item.identifier.chop + '.png'
+end
+
 compile '/assets/style/*/' do
   filter :sass
 end
